@@ -10,7 +10,7 @@ test.describe("Sample tests", () => {
     await expect(page).toHaveTitle(/Playwright/);
 
     // wait 3 seconds just to see the browser.
-    // (remove this timeout in a real test)
+    // (you can remove this timeout in a real test)
     await page.waitForTimeout(3000);
   });
 });

@@ -12,13 +12,13 @@ export default defineConfig({
   use: {
     headless: false,
     // channel: "chrome", // uncomment to use chrome instead of chromium
-
-    // if HTTP auth, define username & password here
-    contextOptions: {
-      httpCredentials: {
-        username: "",
-        password: "",
-      },
-    },
   },
+
+  // Configure projects for major browsers.
+  projects: [
+    {
+      name: "chromium",
+      use: { ...devices["Desktop Chrome"] },
+    },
+  ],
 });
